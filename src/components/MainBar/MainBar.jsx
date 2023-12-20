@@ -1,5 +1,6 @@
 import './MainBar.scss'
 import Stage from './Stage/Stage'
+import Stage2 from './stage2/Stage2'
 
 
 const MainBar = () => {
@@ -30,20 +31,17 @@ const MainBar = () => {
       </div>
 
       <div className="maincenter">
-        {/* <div className="pipeline">
-
-        </div> */}
         <div className="maincenterstage-one">
           <Stage stageObj={{ name: "Stage-One", num: "1", desc: true }} />
         </div>
+
         <button className='nextarrowBtn'><i class='far fa-arrow-alt-circle-right'></i></button>
 
-        {/* <div className="pipelinetwo">
 
-        </div> */}
         <div className="maincenterstage-two">
-          <Stage stageObj={{ name: "Stage-two", num: "2", desc: false }} />
+          <Stage2 stageObj={{ name: "Stage-two", num: "2", desc: false }} />
         </div>
+
         <div className="maincenterbottom">
           <button> <img src="https://cdn-icons-png.flaticon.com/128/1187/1187778.png" alt="" />Manage Failures BETA</button>
           <img src="https://cdn-icons-png.flaticon.com/128/9144/9144353.png" alt="" />

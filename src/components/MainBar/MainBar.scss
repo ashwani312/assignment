@@ -26,7 +26,6 @@
                 color: white;
                 border-radius: 10px;
                 font-weight: bolder;
-
             }
 
             .pipelinetestcontent {
@@ -85,8 +84,6 @@
     }
 
     .maincenter {
-
-        width: 95%;
         position: relative;
         background-color: rgba(255, 255, 255, 0.6);
         height: 80vh;
@@ -95,53 +92,34 @@
         border-right: 5px solid crimson;
         display: flex;
         align-items: start;
-        overflow: scroll;
         overflow-x: hidden;
-
-        .pipeline{
-            position: absolute;
-            left: 77px;
-            top: 51px;
-            height: 232px;
-            background-color: black;
-            width: 3px;
-        }
-        .pipelinetwo{
-            position: absolute;
-            right: 497px;
-            top: 51px;
-            height: 232px;
-            background-color: black;
-            width: 3px;
-        }
-
-
-
-        .nextarrowBtn {
-            margin-top: 30px;
-            background: transparent;
-            border: none;
-            font-size: 40px;
-            color: #4652A2;
-        }
-
-        .maincenterstage-one {
-            padding-top: 10px;
-            padding-left: 80px;
-        }
-
-        .maincenterstage-two {
-            padding-top: 10px;
-            // padding-left: 80px;
-        }
-
-
+        background:
+            linear-gradient(-90deg, rgba(0, 0, 0, .05) 1px, transparent 1px),
+            linear-gradient(rgba(0, 0, 0, .05) 1px, transparent 1px),
+            linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px),
+            linear-gradient(rgba(0, 0, 0, .04) 1px, transparent 1px),
+            linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+            linear-gradient(-90deg, #aaa 1px, transparent 1px),
+            linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px),
+            linear-gradient(#aaa 1px, transparent 1px),
+            #f2f2f2;
+        background-size:
+            4px 4px,
+            4px 4px,
+            80px 80px,
+            80px 80px,
+            80px 80px,
+            80px 80px,
+            80px 80px,
+            80px 80px;
 
         .maincenterbottom {
+            height: max-content;
             position: absolute;
+            z-index: 999;
             padding: 10px;
-            bottom: 0;
-            right: 0;
+            bottom: -80px;
+            right: 0px;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -167,6 +145,41 @@
                 height: 30px;
             }
         }
+
+        .pipeline {
+            position: absolute;
+            left: 77px;
+            top: 51px;
+            height: 232px;
+            background-color: black;
+            width: 3px;
+        }
+
+
+
+
+        .nextarrowBtn {
+            margin-top: 30px;
+            background: transparent;
+            border: none;
+            font-size: 40px;
+            color: #4652A2;
+            margin-right: 20px;
+        }
+
+        .maincenterstage-one {
+            padding-top: 10px;
+            padding-left: 80px;
+        }
+
+        .maincenterstage-two {
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+
+
+
+
 
         &::-webkit-scrollbar {
             width: 10px;

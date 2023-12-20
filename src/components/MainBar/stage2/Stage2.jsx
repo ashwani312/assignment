@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import './Stage.scss';
+import './stage.scss';
 
 
-const Stage = ({ stageObj }) => {
+const Stage2 = ({ stageObj }) => {
     const [expanded, setExpanded] = useState(false);
     const [expandOne, setExpendOne] = useState(false);
 
@@ -32,16 +32,14 @@ const Stage = ({ stageObj }) => {
             </div>
         )
     }
-    // 435px
     return (
         <>
-            <div className="pipeline" style={{ height: expanded ? expandOne ? "628px" : "405px" : "232px" }}>
+  
 
-            </div>
-            <span className='rightmarkone' ><i class="fa-solid fa-check" style={{ color: "green" }}></i></span>
-            <span className='rightmarktwo' style={{top : expanded ? expandOne ? "660px" : "435px" : "260px"}}><i class="fa-solid fa-check" style={{ color: "green" }}></i></span>
             <div className='Stage'>
+                <div className="pipelinetwo">
 
+                </div>
                 <div className="stageOne">
                     <div className="pipelinestage"></div>
                     <div className="stageOnebox">
@@ -53,10 +51,7 @@ const Stage = ({ stageObj }) => {
                             </div>}
                         </div>
                     </div>
-                  
-                    <div className="pipelinestagejobonestageone" >
-                    </div>
-
+                    <div className="pipelinestagejobone" ></div>
                     <div className="stageOneJob">
                         <div className="top">
                             <div className="stageOneJobleft">
@@ -72,18 +67,12 @@ const Stage = ({ stageObj }) => {
                             <button>latest</button>
                         </div>
                     </div>
-                    <div className="stageOneJobsubinfoboxespipeline" style={{
-                        display: expanded ? "block" : "none",
-
-                    }}>
-
-                    </div>
-                    <div className="pipelinestagejobonebottom" style={{
-                        display: expanded ? "block" : "none",
-                        height: expanded ? expandOne ? "425px" : "200px" : "0px"
-                    }}></div>
+                    <div className="stageOneJobsubinfoboxespipeline"></div>
+                    <div className="pipelinestagejobonebottom" style={{ display: expanded ? "block" : "none",
+                height : expanded? "57px" : "0px"
+                }}></div>
                     <div className="stageOneJobsubinfo" style={{ display: expanded ? 'block' : 'none' }}>
-
+                      
                         <div className='stageOneJobsubinfoboxes'>
 
                             <div className='stageOneJobsubinfobox'>
@@ -113,26 +102,11 @@ const Stage = ({ stageObj }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="pipelinestagejobtwostagetwo" style={{ top: expanded ? expandOne ? "660px" : "437px" : " 266px" }}></div>
-                    <div className="stageTwoJob">
-                        <div className="top">
-                            <div className="stageOneJobleft">
-                                job_2 : Job Type: Rest API
-                            </div>
-                            <div className="stageOneJobright">
-                                46 sec
-                            </div>
-                        </div>
-                        <div className="bottom">
-                            <button>Get</button>
-                            <button style={{ display: "none" }}>latest</button>
-                        </div>
-                    </div>
+                    <div className="pipelinestagejobtwo" style={{ top: expanded ? expandOne ? "660px" : "437px" : " 266px" }}></div>
                 </div>
-      
             </div>
         </>
     )
 }
 
-export default Stage
+export default Stage2
