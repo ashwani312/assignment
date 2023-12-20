@@ -1,0 +1,282 @@
+.Stage {
+    padding: 5px 50px;
+    overflow: hidden;
+    width: 25vw;
+
+
+    .stageOne {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        height: max-content;
+
+        .pipelinestage {
+            overflow: hidden;
+            position: absolute;
+            top: 36px;
+            left: -75px;
+            height: 4px;
+            background-color: black;
+            width: 75px;
+        }
+
+        .pipelinestagejobone {
+            position: absolute;
+            top: 150px;
+            left: -100px;
+            height: 4px;
+            background-color: black;
+            width: 100px;
+        }
+
+        .pipelinestagejobtwo {
+            position: absolute;
+            top: 266px;
+            left: -100px;
+            height: 4px;
+            background-color: black;
+            width: 100px;
+        }
+
+        .pipelinestagejobonebottom {
+            position: absolute;
+            top: 196px;
+            left: 17px;
+            height: 425px;
+            background-color: black;
+            width: 2px;
+        }
+
+        .stageOnebox {
+            font-size: 13px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            height: 60px;
+            width: 300px;
+            color: white;
+            background-color: #4652A2;
+            border-radius: 50px;
+
+
+            span {
+                padding: 5px 9px;
+                border: 4px solid orange;
+                border-radius: 50%;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                desc {
+                    font-size: px;
+                }
+            }
+        }
+
+        .stageOneJob {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: max-content;
+            width: 300px;
+            color: white;
+            background-color: #4652A2;
+            border-radius: 5px;
+
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px;
+                height: 50%;
+                display: flex;
+                font-size: 13px;
+
+
+                .stageOneJobright {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    i {
+                        cursor: pointer;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .bottom {
+                padding: 10px;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background-color: #6B74A8;
+
+                button {
+                    cursor: pointer;
+                    padding: 2px 6px;
+                    border: none;
+                    border-radius: 5px;
+
+                    &:nth-child(1) {
+                        color: white;
+                        background-color: #52BFE7;
+                    }
+                }
+            }
+        }
+
+        .stageOneJobsubinfo {
+            width: 300px;
+            padding: 10px;
+            background-color: #4652A2;
+            border-radius: 5px;
+            margin-left: 40px;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            i {
+                font-size: 20px;
+            }
+            .stageOneJobsubinfoboxespipeline {
+                 
+                position: absolute;
+                z-index: 999;
+                top: 20px;
+                left: -30px;
+                height: 3px;
+                background-color: black;
+                width: 100px;
+            }
+
+
+            .stageOneJobsubinfoboxes {
+                width: max-content;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+             
+
+                .ms-otp-data {
+                    width: 300px;
+                    padding: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px 8px;
+                    font-size: 15px;
+                    background: #5E6798;
+                    align-items: center;
+
+                    .ms-otp-data-description {
+                        width: 100%;
+                        padding: 7px 0px;
+                        display: flex;
+                        justify-content: space-around;
+                        border-bottom: 0.1px solid gray;
+                        align-items: center;
+
+                        // .cloning{
+
+                        // }
+                        .timer {
+
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-size: 9px;
+
+                            h5 {
+                                color: rgb(119, 223, 153);
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .stageOneJobsubinfobox {
+                    text-align: center;
+                    width: 300px;
+                    padding: 4px;
+                    cursor: pointer;
+                    border-bottom: 0.1px solid gray;
+                    display: flex;
+                    align-items: center;
+                    font-size: 13px;
+                    justify-content: space-between;
+
+
+
+                    .description {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+
+                        .succces {
+                            color: rgb(119, 223, 153);
+                            font-weight: bold;
+                            font-size: 15px;
+                        }
+
+                    }
+
+                }
+
+
+            }
+        }
+
+        .stageTwoJob {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: max-content;
+            width: 300px;
+            color: white;
+            background-color: #4652A2;
+            border-radius: 5px;
+
+            .top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                height: 50%;
+                display: flex;
+                font-size: 13px;
+            }
+
+            .bottom {
+                padding: 10px;
+                height: 50%;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background-color: #6B74A8;
+
+                button {
+                    cursor: pointer;
+                    padding: 4px 6px;
+                    border: none;
+                    border-radius: 5px;
+
+                    &:nth-child(1) {
+                        color: white;
+                        background-color: #52BFE7;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,191 @@
+.MainBar {
+    flex: 11;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgba(128, 128, 128, 0.2);
+
+
+    .maintopbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .maintopbaritem1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            button {
+                font-size: 15px;
+                padding: 15px;
+                border: none;
+                background-color: #82A479;
+                color: white;
+                border-radius: 10px;
+                font-weight: bolder;
+
+            }
+
+            .pipelinetestcontent {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-size: 19px;
+                    color: #0086FF;
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: rgb(88, 84, 84);
+
+                    h4 {
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .maintopbaritem2 {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            .maintopbaritembuttons {
+                display: flex;
+                gap: 10px;
+
+                button {
+                    cursor: pointer;
+                    padding: 5px;
+                    background-color: #75DCE5;
+                    border: none;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .maintopbaritem3 {
+            button {
+                cursor: pointer;
+                padding: 9px 10px;
+                border: none;
+                background-color: #0086FF;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .maincenter {
+
+        width: 95%;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.6);
+        height: 80vh;
+        border-radius: 10px;
+        box-shadow: -6px 28px 10px -13px rgba(0, 0, 0, 0.2);
+        border-right: 5px solid crimson;
+        display: flex;
+        align-items: start;
+        overflow: scroll;
+        overflow-x: hidden;
+
+        .pipeline{
+            position: absolute;
+            left: 77px;
+            top: 51px;
+            height: 232px;
+            background-color: black;
+            width: 3px;
+        }
+        .pipelinetwo{
+            position: absolute;
+            right: 497px;
+            top: 51px;
+            height: 232px;
+            background-color: black;
+            width: 3px;
+        }
+
+
+
+        .nextarrowBtn {
+            margin-top: 30px;
+            background: transparent;
+            border: none;
+            font-size: 40px;
+            color: #4652A2;
+        }
+
+        .maincenterstage-one {
+            padding-top: 10px;
+            padding-left: 80px;
+        }
+
+        .maincenterstage-two {
+            padding-top: 10px;
+            // padding-left: 80px;
+        }
+
+
+
+        .maincenterbottom {
+            position: absolute;
+            padding: 10px;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            button {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                cursor: pointer;
+                background-color: red;
+                color: white;
+                padding: 8px 14px;
+                border: none;
+                border-radius: 20px;
+
+                img {
+                    height: 20px;
+                }
+            }
+
+            img {
+                cursor: pointer;
+                height: 30px;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            border-radius: 10px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+}
