@@ -4,21 +4,7 @@
     overflow: hidden;
     width: 25vw;
 
-    .rightmarkone {
-        width: inherit;
-        position: absolute;
-        top: 130px;
-        left: -20px;
-        font-size: 30px;
-        color: green;
-        i{
-            z-index: 999;
-            padding: 3px;
-            border: 5px solid green;
-            border-radius: 50%;
-        }
-
-    }
+  
 
 
     .stageOne {
@@ -28,6 +14,26 @@
         flex-direction: column;
         gap: 30px;
         height: max-content;
+
+
+        .rightmarkonestagetworighticon {
+            top: 233px;
+            left: 2px;
+            z-index: 999;
+            width: inherit;
+            position: absolute;
+            font-size: 20px;
+            color: green;
+            
+            i {
+                background-color: rgb(246, 245, 245) ;
+                z-index: 999;
+                padding: 2px;
+                border: 4px solid green;
+                border-radius: 50%;
+            }
+        
+        }
 
         .pipelinestage {
             overflow: hidden;

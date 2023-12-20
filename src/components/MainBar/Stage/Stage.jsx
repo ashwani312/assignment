@@ -39,6 +39,8 @@ const Stage = ({ stageObj }) => {
 
             </div>
             <span className='rightmarkone' ><i class="fa-solid fa-check" style={{ color: "green" }}></i></span>
+
+            <span className='rightmarkexpendeone' ><i class="fa-solid fa-check" style={{ color: "green", display : expanded?"block" : "none" }}></i></span>
             <span className='rightmarktwo' style={{top : expanded ? expandOne ? "660px" : "435px" : "260px"}}><i class="fa-solid fa-check" style={{ color: "green" }}></i></span>
             <div className='Stage'>
 

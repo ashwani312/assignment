@@ -34,7 +34,7 @@ const Stage2 = ({ stageObj }) => {
     }
     return (
         <>
-  
+
 
             <div className='Stage'>
                 <div className="pipelinetwo">
@@ -68,11 +68,13 @@ const Stage2 = ({ stageObj }) => {
                         </div>
                     </div>
                     <div className="stageOneJobsubinfoboxespipeline"></div>
-                    <div className="pipelinestagejobonebottom" style={{ display: expanded ? "block" : "none",
-                height : expanded? "57px" : "0px"
-                }}></div>
+                    <span className='rightmarkonestagetworighticon' ><i class="fa-solid fa-check" style={{ color: "green" }}></i></span>
+                    <div className="pipelinestagejobonebottom" style={{
+                        display: expanded ? "block" : "none",
+                        height: expanded ? "57px" : "0px"
+                    }}></div>
                     <div className="stageOneJobsubinfo" style={{ display: expanded ? 'block' : 'none' }}>
-                      
+
                         <div className='stageOneJobsubinfoboxes'>
 
                             <div className='stageOneJobsubinfobox'>
